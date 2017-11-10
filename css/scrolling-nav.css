@@ -34,3 +34,22 @@ height:100vh;
 	z-index:-5;
 }
 
+input{
+
+border-radius:80px;
+padding:10px 25px;
+border-color:#E8E7E7;
+border-style:solid;
+background-color:white;
+border-width:1px;
+margin:20px 0px;
+width:auto;
+left:0;
+box-shadow: inset 2px 2px 3px 0 rgba(0,0,0,0.50);
+}
+
+input:focus{
+
+background-color:#E8E7E7;
+
+}

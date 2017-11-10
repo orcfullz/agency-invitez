@@ -16,9 +16,21 @@
     <!-- Custom styles for this template -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+
   </head>
 
   <body id="page-top">
+
+
 
    
 
@@ -32,15 +44,36 @@
             <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
             
           </div>
-          <div class="col-lg-6 mx-auto" style="background-color:white; padding:5%;">
+          <div class="col-lg-6 mx-auto" style="background-color:#E8E7E7; padding:5%;">
             <h2>About this page</h2>
+
             <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-            <ul>
-              <li>Clickable nav links that smooth scroll to page sections</li>
-              <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-              <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-              <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-            </ul>
+           
+         <form id="formRequest">
+
+Full Name:<br/>
+<input type="text" name="fullname" id="fullname" placeholder="Joe Bloggs" value=""/><br/>
+
+
+Email Address:<br/>
+<input type="text" name="emailaddress" id="emailaddress"  placeholder="alistair@designingagency.com" value=""/><br/>
+
+
+Mobile Number:<br/>
+<input type="text" name="mobilenumber" id="mobilenumber"  placeholder="E.g 8866 5229" value=""/><br/>
+
+
+
+Are you coming? ( yes / no )<br/>
+<input type="text" name="coming" id="coming"  placeholder="Yes / No" value=""/><br/><br/>
+
+<center>
+<input type="button" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Submit"/>
+<input type="reset" value="Reset"/>
+</center>
+
+
+</form>
           </div>
         </div>
         
@@ -49,16 +82,22 @@
     </section>
 
     
+<script>
+function postContactToGoogle() {
+var name=$('#fullname').val();
+var emailaddress=$('#emailaddress').val();
+var mobilenumber=$('#mobilenumber').val();
+var coming=$('#coming').val();
+$.ajax({
+url:"https://docs.google.com/forms/d/e/1FAIpQLSdpFU0j9FRWWrtSIEKdauzHKiysR7ou6SueNhFv1sbNn_EfHQ/formResponse",data:{"entry.916773726":name,"entry.1998583120":emailaddress,"entry.928945466":mobilenumber,"entry.1370220927":coming},type:"POST",dataType:"xml",statusCode: {0:function() { 
+  window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");
+}
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+}
+});
+}
+</script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
 
   </body>
 
