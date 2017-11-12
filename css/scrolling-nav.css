@@ -13,9 +13,22 @@
     src: url(../assets/Avenir.ttc);
 
 }
+#element::-webkit-scrollbar { 
+    display: none; 
+}
 
+::-webkit-scrollbar { 
+    display: none; 
+}
 
+::-webkit-scrollbar { 
+    display: block; 
+}
 
+body{
+background-color:#1f1f1f;
+
+}
 header {
   padding: 154px 0 100px;
 }
@@ -134,6 +147,14 @@ width:100%;
 
 }
 
+.lol-block{
+
+	height:30px;
+	width:30px;
+position:absolute;
+bottom:0;
+right:0;
+background-color:#1f1f1f;}
 .thank-you-container h2,p{
 color:#414142;
 
