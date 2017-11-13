@@ -141,9 +141,11 @@ width:100%;
 .thank-you-container{
 
 	height:500px;
-	background-color:gold;
+	background-color:transparent;
 	padding:10%;
-	width:500px;
+	padding-left:0;
+	width:800px;
+	color:white !important;
 
 }
 
