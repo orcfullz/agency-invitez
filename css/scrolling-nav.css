@@ -84,11 +84,11 @@ height:100vh;
 }
 
 #bgvid{
-	width:100%;
+	height:100%;
 	left:0;
-	top:0
-	position:absolute;
-	opacity:0.5;
+	top:0;
+	/*margin-left:-50%;*/
+		opacity:0.8;
 }
 
 label{
@@ -161,3 +161,5 @@ background-color:#1f1f1f;}
 color:#414142;
 
 }
+
+
