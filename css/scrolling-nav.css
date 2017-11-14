@@ -165,3 +165,18 @@ color:#414142;
 }
 
 
+@media only screen 
+  and (max-device-width: 736px) 
+  {
+
+h2{line-height:100%;}
+  	.mx-auto{
+
+  		overflow:auto !important;
+  	}
+
+  	.holder{height:auto !important;padding-top:30px;}
+
+}
+
+
