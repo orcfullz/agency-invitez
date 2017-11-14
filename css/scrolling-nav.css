@@ -13,7 +13,7 @@
     src: url(../assets/Avenir.ttc);
 
 }
-#element::-webkit-scrollbar { 
+/*#element::-webkit-scrollbar { 
     display: none; 
 }
 
@@ -23,8 +23,8 @@
 
 ::-webkit-scrollbar { 
     display: block; 
-}
-
+}*/
+*{border}
 body{
 background-color:#1f1f1f;
 
@@ -39,12 +39,12 @@ h1,h2,h3,p {
 
 h2{
 
-	font-size:2.5em;
+	font-size:3em;
 	font-family:sent-italbold;
 }
 
 p{
-	font-size:0.9em !important;
+	font-size:0.82em !important;
 		font-family:avenir;
 
 }
@@ -66,7 +66,7 @@ height:100vh;
 }
 
 .lead{
-
+font-size:1.1em;
 	color:#D9D9D9;
 }
 
@@ -87,7 +87,7 @@ height:100vh;
 	height:100%;
 	left:0;
 	top:0;
-	/*margin-left:-50%;*/
+	margin-left:-18%;
 		opacity:0.8;
 }
 
@@ -140,11 +140,11 @@ width:100%;
 
 .thank-you-container{
 
-	height:500px;
+	height:auto;
 	background-color:transparent;
 	padding:10%;
 	padding-left:0;
-	width:800px;
+	width:100%;
 	color:white !important;
 
 }
