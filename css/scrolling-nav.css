@@ -69,9 +69,15 @@ height:100vh;
 .lead{
 font-size:0.9em;
 	color:#D9D9D9;
+	margin-top:20px;
 	line-height:200%;
 }
 
+.beer{
+padding-top:20px;
+font-size:1.3em; color:gold;
+font-family:sent-italbold;
+}
 .container-vid{
 
 	top:0;
